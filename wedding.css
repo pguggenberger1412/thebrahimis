@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Alex Brush';
+    src: url('assets/webfonts/alex-brush.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+#banner h2 {
+    font-family: 'Alex Brush', Georgia, serif;
+    font-size: clamp(4rem, 12vw, 9rem);
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0.02em;
+}
