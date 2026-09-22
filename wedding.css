@@ -12,3 +12,559 @@
     text-transform: none;
     letter-spacing: 0.02em;
 }
+
+#page-wrapper {
+    background-color: rgba(113, 72, 58, 0.54);
+    background-image:
+        radial-gradient(ellipse 62% 44% at 4% 12%, rgba(224, 170, 99, 0.36), transparent 46%),
+        radial-gradient(ellipse 56% 62% at 96% 26%, rgba(92, 53, 45, 0.24), transparent 58%),
+        radial-gradient(ellipse 70% 48% at 28% 58%, rgba(194, 119, 67, 0.30), transparent 40%),
+        radial-gradient(ellipse 58% 64% at 82% 78%, rgba(79, 48, 43, 0.22), transparent 30%),
+        linear-gradient(118deg, rgba(83, 54, 47, 0.54) 0%, rgba(147, 98, 68, 0.46) 30%, rgba(211, 157, 92, 0.40) 55%, rgba(101, 68, 58, 0.50) 100%),
+        url('images/banner.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+html {
+    background: #d8c4ad;
+}
+
+body,
+body.landing {
+    background-color: rgba(113, 72, 58, 0.54);
+    background-image:
+        radial-gradient(ellipse 62% 44% at 4% 12%, rgba(224, 170, 99, 0.36), transparent 76%),
+        radial-gradient(ellipse 56% 62% at 96% 26%, rgba(92, 53, 45, 0.24), transparent 78%),
+        radial-gradient(ellipse 70% 48% at 28% 58%, rgba(194, 119, 67, 0.30), transparent 80%),
+        radial-gradient(ellipse 58% 64% at 82% 78%, rgba(79, 48, 43, 0.22), transparent 80%),
+        linear-gradient(118deg, rgba(83, 54, 47, 0.54) 0%, rgba(147, 98, 68, 0.46) 30%, rgba(211, 157, 92, 0.40) 55%, rgba(101, 68, 58, 0.50) 100%),
+        url('images/banner.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body.landing #page-wrapper,
+body.is-mobile.landing #page-wrapper {
+    background: transparent;
+}
+
+#one.wrapper.style1 {
+    background-color: transparent;
+    background-image:
+        radial-gradient(ellipse 64% 52% at 16% 24%, rgba(231, 174, 105, 0.11), transparent 78%),
+        linear-gradient(135deg, rgba(190, 119, 71, 0.07), transparent 72%);
+    color: #4b2f27;
+    box-shadow: none;
+}
+
+#one.wrapper.style1 h2,
+#one.wrapper.style1 h3,
+#one.wrapper.style1 h4,
+#one.wrapper.style1 h5,
+#one.wrapper.style1 h6,
+#one.wrapper.style1 .wedding-date,
+#one.wrapper.style1 .calendar-icon-link {
+    color: #4b2f27;
+}
+
+#one.wrapper.style1 p,
+#one.wrapper.style1 header p,
+#one.wrapper.style1 #countdown {
+    color: rgba(75, 47, 39, 0.80);
+}
+
+#one.wrapper.style1 .calendar-card {
+    border: 1px solid rgba(75, 47, 39, 0.07);
+    box-shadow: 0 8px 18px rgba(75, 47, 39, 0.10);
+}
+
+#two.wrapper.alt.style2 {
+    background-color: transparent;
+    background-image:
+        radial-gradient(ellipse 58% 58% at 84% 18%, rgba(116, 67, 51, 0.11), transparent 78%),
+        linear-gradient(135deg, rgba(184, 111, 64, 0.06), transparent 74%);
+    color: #3d2d22;
+}
+
+#two.wrapper.alt.style2 .spotlight {
+    background: transparent;
+}
+
+#two.wrapper.alt.style2 h2,
+#two.wrapper.alt.style2 h3,
+#two.wrapper.alt.style2 h4,
+#two.wrapper.alt.style2 p,
+#two.wrapper.alt.style2 a {
+    color: #3d2d22;
+}
+
+#two.wrapper.alt.style2 .content a.btn-route,
+#two.wrapper.alt.style2 .btn-route {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.2rem;
+    margin-top: 1rem;
+    background: rgba(146, 90, 55, 0.14);
+    border: 1px solid rgba(61, 45, 34, 0.12);
+    border-radius: 999px;
+    color: #3d2d22;
+    text-decoration: none;
+    border-bottom: none;
+}
+
+#two.wrapper.alt.style2 .content a.btn-route:hover,
+#two.wrapper.alt.style2 .btn-route:hover {
+    background: rgba(146, 90, 55, 0.22);
+}
+
+/* Date & Calendar Invite Header */
+.wedding-date-wrapper {
+    display: block;
+    width: 100%;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.wedding-date-container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.wedding-date {
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+.calendar-icon-link {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.55rem;
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-decoration: none;
+    border-bottom: none !important; /* Prevents default Spectral link underlines */
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.calendar-link-label {
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+}
+
+.calendar-icon-link:hover {
+    color: #29b6f6; /* Subtle accent highlight on hover */
+    transform: scale(1.15);
+}
+
+#two.wrapper.alt.style2 .timeline-spotlight {
+    flex-direction: row-reverse !important;
+    background: transparent;
+}
+
+#three.wrapper.style3.special {
+    background-color: transparent;
+    background-image: none;
+    color: #3d2d22;
+}
+
+#three.wrapper.style3.special h2,
+#three.wrapper.style3.special > .inner > .major p {
+    color: #3d2d22;
+}
+
+#three.wrapper.style3.special .features li {
+    background-color: #eee0cb;
+    color: #3d2d22;
+    box-shadow: inset 0 0 0 1px rgba(76, 44, 34, 0.10), 0 10px 24px rgba(65, 39, 32, 0.12);
+}
+
+#three.wrapper.style3.special .features li h3,
+#three.wrapper.style3.special .features li h4,
+#three.wrapper.style3.special .features li p {
+    color: #3d2d22;
+}
+
+#three.wrapper.style3.special .features li::before {
+    color: #9c5d3f;
+}
+
+@media screen and (max-width: 736px) {
+    #three.wrapper.style3.special .features li {
+        background-color: #eee0cb !important;
+    }
+}
+
+#cta.wrapper.style4 {
+    background-color: rgba(91, 49, 43, 0.22);
+    background-image:
+        radial-gradient(ellipse 40% 60% at 72% 50%, rgba(215, 137, 70, 0.20), transparent 74%),
+        linear-gradient(120deg, rgba(75, 43, 42, 0.18), rgba(151, 84, 54, 0.20));
+}
+
+.timeline-spotlight .venue-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 520px;
+    padding: 0;
+    background: rgba(91, 48, 31, 0.35);
+    overflow: hidden;
+}
+
+.venue-image img {
+    width: 100%;
+    height: 100%;
+    min-height: 520px;
+    object-fit: cover;
+    display: block;
+    filter: saturate(0.7) sepia(0.18) contrast(1.05);
+}
+
+.timeline-details {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.timeline-entry {
+    position: relative;
+    min-height: 6.5rem;
+    padding: 0.75rem 0 0.75rem 8rem;
+}
+
+.timeline-entry .icon.major {
+    position: absolute;
+    left: 0;
+    top: 0.65rem;
+    color: #ffffff;
+}
+
+.timeline-entry h3 {
+    line-height: 1.25;
+    margin-top: 0.25rem !important;
+}
+
+.timeline-details h3,
+.timeline-details p {
+    margin: 0;
+}
+
+.timeline-details p {
+    margin-top: 0.35rem;
+}
+
+@media screen and (max-width: 980px) {
+    .timeline-spotlight {
+        flex-direction: column !important;
+    }
+
+    .timeline-spotlight .venue-image,
+    .timeline-spotlight .content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .timeline-entry {
+        padding-left: 6.5rem;
+    }
+}
+
+/* Make the map block match the image column proportions in section 2 */
+.spotlight .map-wrapper {
+    width: 40%;
+    max-width: 40%;
+    min-width: 40%;
+    order: 1;
+    overflow: hidden;
+    background:
+        linear-gradient(135deg, rgba(123, 73, 55, 0.12), rgba(234, 191, 124, 0.10)),
+        #f8f1e9;
+    border-radius: 0;
+    box-shadow: 0 12px 24px rgba(59, 42, 32, 0.10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 520px;
+    height: 520px;
+    padding: 0;
+    position: relative;
+}
+
+.map-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 520px;
+    border: 0;
+    display: block;
+    filter: saturate(0.8) contrast(1.08);
+}
+
+@media (max-width: 980px) {
+    .spotlight .map-wrapper {
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+    }
+}
+
+/* Calendar Countdown Layout */
+.calendar-countdown-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 3rem auto;
+    flex-wrap: wrap;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.calendar-card {
+    position: relative;
+    width: 140px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* Binder Rings */
+.rings {
+    position: absolute;
+    top: -12px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px;
+    box-sizing: border-box;
+    z-index: 20;
+}
+
+.ring {
+    width: 14px;
+    height: 28px;
+    background: #333333;
+    border-radius: 7px;
+    box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.5), 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Top Section (Labels) */
+.calendar-top {
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 25px 10px 12px;
+    border-radius: 8px 8px 0 0;
+    text-transform: uppercase;
+}
+
+/* Color Schemes */
+.color-days,
+.color-days .flip-card,
+.color-days .panel,
+.color-days .calendar-top {
+    background: #c79b73;
+}
+
+.color-hours,
+.color-hours .flip-card,
+.color-hours .panel,
+.color-hours .calendar-top {
+    background: #a87855;
+}
+
+.color-minutes,
+.color-minutes .flip-card,
+.color-minutes .panel,
+.color-minutes .calendar-top {
+    background: #86583f;
+}
+
+.color-seconds,
+.color-seconds .flip-card,
+.color-seconds .panel,
+.color-seconds .calendar-top {
+    background: #603d32;
+}
+
+.color-days .val,
+.color-hours .val,
+.color-minutes .val,
+.color-seconds .val {
+    color: #fff8ef;
+}
+
+/* Flip Card Body */
+.flip-card {
+    position: relative;
+    width: 100%;
+    height: 90px;
+    background: #ffffff;
+    border-radius: 0 0 8px 8px;
+    perspective: 400px;
+}
+
+/* Center Crease Line */
+.flip-card::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.12);
+    z-index: 10;
+}
+
+/* Split Panels */
+.panel {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    background: #ffffff;
+    backface-visibility: hidden;
+}
+
+.panel-top {
+    top: 0;
+    transform-origin: bottom center;
+}
+
+.panel-bottom {
+    bottom: 0;
+    border-radius: 0 0 8px 8px;
+    transform-origin: top center;
+}
+
+/* Layering & Initial States for Flaps */
+.top-flap {
+    z-index: 3;
+}
+
+.bottom-flap {
+    z-index: 2;
+    transform: rotateX(90deg); /* Keeps flap hidden until animated */
+}
+
+/* Text Alignment inside Halves */
+.panel .val {
+    display: block;
+    width: 100%;
+    height: 90px;
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 90px;
+    letter-spacing: -2px;
+    margin: 0;
+    padding: 0;
+}
+
+.panel-bottom .val {
+    margin-top: -45px; /* Offset to show bottom half */
+}
+
+/* Flap Animations */
+.animate-top {
+    animation: flip-top-flap 0.3s ease-in forwards;
+}
+
+.animate-bottom {
+    animation: flip-bottom-flap 0.3s ease-out 0.3s forwards;
+}
+
+.wedding-hr {
+    border: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    width: 60%;
+    max-width: 400px;
+    margin: 1.5rem auto 1rem auto;
+}
+
+@keyframes flip-top-flap {
+    0% {
+        transform: rotateX(0deg);
+        filter: brightness(1);
+    }
+    100% {
+        transform: rotateX(-90deg);
+        filter: brightness(0.75);
+    }
+}
+
+@keyframes flip-bottom-flap {
+    0% {
+        transform: rotateX(90deg);
+        filter: brightness(0.75);
+    }
+    100% {
+        transform: rotateX(0deg);
+        filter: brightness(1);
+    }
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .wedding-date {
+        font-size: 1.4rem;
+    }
+
+    .calendar-icon-link {
+        font-size: 1.2rem;
+    }
+
+    .calendar-countdown-wrapper {
+        gap: 10px;
+    }
+
+    .calendar-card {
+        width: 85px;
+        margin-top: 10px;
+    }
+
+    .rings {
+        top: -8px;
+        padding: 0 15px;
+    }
+
+    .ring {
+        width: 10px;
+        height: 20px;
+    }
+
+    .calendar-top {
+        font-size: 0.65rem;
+        padding: 18px 5px 8px;
+    }
+
+    .flip-card {
+        height: 50px;
+    }
+
+    .panel .val {
+        height: 50px;
+        font-size: 2.5rem;
+        line-height: 50px;
+    }
+
+    .panel-bottom .val {
+        margin-top: -25px;
+    }
+}
