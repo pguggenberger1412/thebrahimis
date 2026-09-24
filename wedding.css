@@ -267,6 +267,11 @@ body.is-mobile.landing #page-wrapper {
 }
 
 @media screen and (max-width: 980px) {
+    #one.wrapper.style1 {
+        background-color: #eee0cb;
+        background-image: none;
+    }
+
     .timeline-spotlight {
         flex-direction: column !important;
     }
@@ -279,6 +284,10 @@ body.is-mobile.landing #page-wrapper {
 
     .timeline-entry {
         padding-left: 6.5rem;
+    }
+
+    .timeline-spotlight br {
+        display: inline;
     }
 }
 
