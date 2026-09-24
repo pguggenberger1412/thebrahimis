@@ -309,8 +309,8 @@ body.is-mobile.landing #page-wrapper {
         max-width: 100%;
     }
 
-    .timeline-spotlight .content {
-        background-color: rgba(238, 224, 203, 0.65);
+    #two.wrapper.alt.style2 .spotlight .content {
+        background-color: rgba(238, 224, 203, 0.78);
     }
 
     .timeline-entry {
@@ -337,6 +337,10 @@ body.is-mobile.landing #page-wrapper {
 
     #banner .more {
         transition-delay: 0.4s;
+    }
+
+    .timeline-entry {
+        padding-left: 4.5rem;
     }
 }
 
