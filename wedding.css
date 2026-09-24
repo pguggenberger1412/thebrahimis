@@ -324,7 +324,13 @@ body.is-mobile.landing #page-wrapper {
 }
 
 @media screen and (max-width: 736px) {
+    #banner {
+        height: auto;
+        min-height: 0;
+    }
+
     #banner:after {
+        display: block;
         transition: opacity 0.8s ease-in-out;
         transition-delay: 0s;
     }
