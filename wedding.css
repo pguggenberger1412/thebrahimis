@@ -214,6 +214,7 @@ body.is-mobile.landing #page-wrapper {
 @media screen and (max-width: 736px) {
     #three.wrapper.style3.special .features li {
         background-color: #eee0cb !important;
+        padding: 3em 1.5em 1.5em;
     }
 }
 
@@ -310,7 +311,7 @@ body.is-mobile.landing #page-wrapper {
     }
 
     #two.wrapper.alt.style2 .spotlight .content {
-        background-color: rgba(238, 224, 203, 0.72);
+        background-color: rgba(238, 224, 203, 0.68);
     }
 
     .timeline-entry {
