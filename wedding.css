@@ -310,12 +310,18 @@ body.is-mobile.landing #page-wrapper {
     }
 
     #two.wrapper.alt.style2 .spotlight .content {
-        background-color: rgba(238, 224, 203, 0.78);
+        background-color: rgba(238, 224, 203, 0.72);
     }
 
     .timeline-entry {
         min-height: 7.5rem;
-        padding-left: 6.5rem;
+        padding-left: 0;
+    }
+
+    .timeline-entry .icon.major {
+        position: static;
+        display: block;
+        margin: 0 auto 1rem;
     }
 
     .timeline-spotlight br {
@@ -339,9 +345,6 @@ body.is-mobile.landing #page-wrapper {
         transition-delay: 0.4s;
     }
 
-    .timeline-entry {
-        padding-left: 4.5rem;
-    }
 }
 
 /* Make the map block match the image column proportions in section 2 */
