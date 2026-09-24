@@ -331,8 +331,10 @@ body.is-mobile.landing #page-wrapper {
 
 @media screen and (max-width: 736px) {
     #banner {
-        height: auto;
-        min-height: 0;
+        height: 100vh;
+        min-height: 100vh;
+        height: 100svh;
+        min-height: 100svh;
     }
 
     #banner:after {
