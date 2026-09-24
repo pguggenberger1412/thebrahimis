@@ -286,7 +286,17 @@ body.is-mobile.landing #page-wrapper {
         position: fixed;
         inset: 0;
         z-index: -1;
-        background: inherit;
+        background-color: rgba(113, 72, 58, 0.54);
+        background-image:
+            radial-gradient(ellipse 62% 44% at 4% 12%, rgba(224, 170, 99, 0.46), transparent 76%),
+            radial-gradient(ellipse 56% 62% at 96% 26%, rgba(92, 53, 45, 0.32), transparent 78%),
+            radial-gradient(ellipse 70% 48% at 28% 58%, rgba(194, 119, 67, 0.38), transparent 80%),
+            radial-gradient(ellipse 58% 64% at 82% 78%, rgba(79, 48, 43, 0.30), transparent 80%),
+            linear-gradient(118deg, rgba(83, 54, 47, 0.62) 0%, rgba(147, 98, 68, 0.54) 30%, rgba(211, 157, 92, 0.48) 55%, rgba(101, 68, 58, 0.58) 100%),
+            url('images/banner.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         pointer-events: none;
     }
 
@@ -295,6 +305,13 @@ body.is-mobile.landing #page-wrapper {
     #page-wrapper {
         background-attachment: scroll;
         background-position: center;
+    }
+
+    body,
+    body.landing,
+    #page-wrapper {
+        background-image: none;
+        background-color: transparent;
     }
 
     .wrapper > .inner {
@@ -324,7 +341,7 @@ body.is-mobile.landing #page-wrapper {
     }
 
     #two.wrapper.alt.style2 .spotlight .content {
-        background-color: rgba(238, 224, 203, 0.68);
+        background-color: rgba(211, 157, 92, 0.78);
     }
 
     .timeline-entry {
