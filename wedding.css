@@ -13,14 +13,23 @@
     letter-spacing: 0.02em;
 }
 
+#banner:after {
+    transition: opacity 2.4s ease-in-out;
+    transition-delay: 0.75s;
+}
+
+#banner .more {
+    transition-delay: 2.8s;
+}
+
 #page-wrapper {
     background-color: rgba(113, 72, 58, 0.54);
     background-image:
-        radial-gradient(ellipse 62% 44% at 4% 12%, rgba(224, 170, 99, 0.36), transparent 46%),
-        radial-gradient(ellipse 56% 62% at 96% 26%, rgba(92, 53, 45, 0.24), transparent 58%),
-        radial-gradient(ellipse 70% 48% at 28% 58%, rgba(194, 119, 67, 0.30), transparent 40%),
-        radial-gradient(ellipse 58% 64% at 82% 78%, rgba(79, 48, 43, 0.22), transparent 30%),
-        linear-gradient(118deg, rgba(83, 54, 47, 0.54) 0%, rgba(147, 98, 68, 0.46) 30%, rgba(211, 157, 92, 0.40) 55%, rgba(101, 68, 58, 0.50) 100%),
+        radial-gradient(ellipse 62% 44% at 4% 12%, rgba(224, 170, 99, 0.46), transparent 46%),
+        radial-gradient(ellipse 56% 62% at 96% 26%, rgba(92, 53, 45, 0.32), transparent 58%),
+        radial-gradient(ellipse 70% 48% at 28% 58%, rgba(194, 119, 67, 0.38), transparent 40%),
+        radial-gradient(ellipse 58% 64% at 82% 78%, rgba(79, 48, 43, 0.30), transparent 30%),
+        linear-gradient(118deg, rgba(83, 54, 47, 0.62) 0%, rgba(147, 98, 68, 0.54) 30%, rgba(211, 157, 92, 0.48) 55%, rgba(101, 68, 58, 0.58) 100%),
         url('images/banner.jpg');
     background-attachment: fixed;
     background-position: center;
@@ -32,15 +41,19 @@ html {
     background: #d8c4ad;
 }
 
+#page-wrapper > section {
+    border: 0;
+}
+
 body,
 body.landing {
     background-color: rgba(113, 72, 58, 0.54);
     background-image:
-        radial-gradient(ellipse 62% 44% at 4% 12%, rgba(224, 170, 99, 0.36), transparent 76%),
-        radial-gradient(ellipse 56% 62% at 96% 26%, rgba(92, 53, 45, 0.24), transparent 78%),
-        radial-gradient(ellipse 70% 48% at 28% 58%, rgba(194, 119, 67, 0.30), transparent 80%),
-        radial-gradient(ellipse 58% 64% at 82% 78%, rgba(79, 48, 43, 0.22), transparent 80%),
-        linear-gradient(118deg, rgba(83, 54, 47, 0.54) 0%, rgba(147, 98, 68, 0.46) 30%, rgba(211, 157, 92, 0.40) 55%, rgba(101, 68, 58, 0.50) 100%),
+        radial-gradient(ellipse 62% 44% at 4% 12%, rgba(224, 170, 99, 0.46), transparent 76%),
+        radial-gradient(ellipse 56% 62% at 96% 26%, rgba(92, 53, 45, 0.32), transparent 78%),
+        radial-gradient(ellipse 70% 48% at 28% 58%, rgba(194, 119, 67, 0.38), transparent 80%),
+        radial-gradient(ellipse 58% 64% at 82% 78%, rgba(79, 48, 43, 0.30), transparent 80%),
+        linear-gradient(118deg, rgba(83, 54, 47, 0.62) 0%, rgba(147, 98, 68, 0.54) 30%, rgba(211, 157, 92, 0.48) 55%, rgba(101, 68, 58, 0.58) 100%),
         url('images/banner.jpg');
     background-attachment: fixed;
     background-position: center;
@@ -55,9 +68,7 @@ body.is-mobile.landing #page-wrapper {
 
 #one.wrapper.style1 {
     background-color: transparent;
-    background-image:
-        radial-gradient(ellipse 64% 52% at 16% 24%, rgba(231, 174, 105, 0.11), transparent 78%),
-        linear-gradient(135deg, rgba(190, 119, 71, 0.07), transparent 72%);
+    background-image: none;
     color: #4b2f27;
     box-shadow: none;
 }
@@ -85,9 +96,7 @@ body.is-mobile.landing #page-wrapper {
 
 #two.wrapper.alt.style2 {
     background-color: transparent;
-    background-image:
-        radial-gradient(ellipse 58% 58% at 84% 18%, rgba(116, 67, 51, 0.11), transparent 78%),
-        linear-gradient(135deg, rgba(184, 111, 64, 0.06), transparent 74%);
+    background-image: none;
     color: #3d2d22;
 }
 
@@ -267,13 +276,26 @@ body.is-mobile.landing #page-wrapper {
 }
 
 @media screen and (max-width: 980px) {
+    body,
+    body.landing,
+    #page-wrapper {
+        background-attachment: scroll;
+        background-position: center top;
+    }
+
+    .wrapper > .inner {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     #one.wrapper.style1 {
         background-color: transparent;
         background-image: none;
     }
 
     #two.wrapper.alt.style2 {
-        background-color: #eee0cb;
+        background-color: rgba(238, 224, 203, 0.9);
         background-image: none;
     }
 
@@ -288,7 +310,7 @@ body.is-mobile.landing #page-wrapper {
     }
 
     .timeline-spotlight .content {
-        background-color: #eee0cb;
+        background-color: rgba(238, 224, 203, 0.9);
     }
 
     .timeline-entry {
@@ -303,7 +325,7 @@ body.is-mobile.landing #page-wrapper {
 
 @media screen and (max-width: 736px) {
     #banner:after {
-        transition: opacity 0.6s ease-in-out;
+        transition: opacity 0.8s ease-in-out;
         transition-delay: 0s;
     }
 
@@ -561,11 +583,15 @@ body.is-mobile.landing #page-wrapper {
     }
 
     .calendar-countdown-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 85px));
+        justify-content: center;
         gap: 10px;
+        width: 100%;
     }
 
     .calendar-card {
-        width: 85px;
+        width: 100%;
         margin-top: 10px;
     }
 
