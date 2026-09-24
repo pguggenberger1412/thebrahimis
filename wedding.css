@@ -303,13 +303,11 @@ body.is-mobile.landing #page-wrapper {
 
     #page-wrapper::before {
         content: '';
-        position: sticky;
-        top: 0;
+        position: absolute;
+        inset: 0;
         z-index: -1;
-        display: block;
         width: 100%;
-        height: 100svh;
-        margin-bottom: -100svh;
+        min-height: 100%;
         background-color: rgba(113, 72, 58, 0.54);
         background-image:
             radial-gradient(ellipse 62% 44% at 4% 12%, rgba(224, 170, 99, 0.46), transparent 76%),
