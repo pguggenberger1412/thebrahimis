@@ -11,6 +11,11 @@
     font-weight: 400;
     text-transform: none;
     letter-spacing: 0.02em;
+    color: #2f4339;
+}
+
+#banner h3 {
+    color: #2d3f2b;
 }
 
 #banner:after {
@@ -23,22 +28,22 @@
 }
 
 #page-wrapper {
-    background-color: rgba(113, 72, 58, 0.54);
+    background-color: rgba(255, 255, 255, 0.82);
     background-image:
-        radial-gradient(ellipse 62% 44% at 4% 12%, rgba(224, 170, 99, 0.46), transparent 46%),
-        radial-gradient(ellipse 56% 62% at 96% 26%, rgba(92, 53, 45, 0.32), transparent 58%),
-        radial-gradient(ellipse 70% 48% at 28% 58%, rgba(194, 119, 67, 0.38), transparent 40%),
-        radial-gradient(ellipse 58% 64% at 82% 78%, rgba(79, 48, 43, 0.30), transparent 30%),
-        linear-gradient(118deg, rgba(83, 54, 47, 0.62) 0%, rgba(147, 98, 68, 0.54) 30%, rgba(211, 157, 92, 0.48) 55%, rgba(101, 68, 58, 0.58) 100%),
+        radial-gradient(ellipse 62% 44% at 4% 12%, rgba(227, 237, 218, 0.22), transparent 46%),
+        radial-gradient(ellipse 56% 62% at 96% 26%, rgba(203, 217, 190, 0.12), transparent 58%),
+        radial-gradient(ellipse 70% 48% at 28% 58%, rgba(230, 236, 218, 0.18), transparent 40%),
+        radial-gradient(ellipse 58% 64% at 82% 78%, rgba(198, 214, 184, 0.13), transparent 30%),
+        linear-gradient(118deg, rgba(255, 255, 255, 0.42) 0%, rgba(250, 251, 246, 0.38) 30%, rgba(255, 253, 248, 0.32) 55%, rgba(249, 251, 245, 0.40) 100%),
         url('images/banner.jpg');
     background-attachment: fixed;
-    background-position: center;
+    background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 html {
-    background: #d8c4ad;
+    background: #f8f8f5;
 }
 
 #page-wrapper > section {
@@ -47,16 +52,16 @@ html {
 
 body,
 body.landing {
-    background-color: rgba(113, 72, 58, 0.54);
+    background-color: rgba(255, 255, 255, 0.82);
     background-image:
-        radial-gradient(ellipse 62% 44% at 4% 12%, rgba(224, 170, 99, 0.46), transparent 76%),
-        radial-gradient(ellipse 56% 62% at 96% 26%, rgba(92, 53, 45, 0.32), transparent 78%),
-        radial-gradient(ellipse 70% 48% at 28% 58%, rgba(194, 119, 67, 0.38), transparent 80%),
-        radial-gradient(ellipse 58% 64% at 82% 78%, rgba(79, 48, 43, 0.30), transparent 80%),
-        linear-gradient(118deg, rgba(83, 54, 47, 0.62) 0%, rgba(147, 98, 68, 0.54) 30%, rgba(211, 157, 92, 0.48) 55%, rgba(101, 68, 58, 0.58) 100%),
-        url('images/banner.jpg');
+        radial-gradient(ellipse 62% 44% at 4% 12%, rgba(227, 237, 218, 0.16), transparent 76%),
+        radial-gradient(ellipse 56% 62% at 96% 26%, rgba(203, 217, 190, 0.09), transparent 78%),
+        radial-gradient(ellipse 70% 48% at 28% 58%, rgba(230, 236, 218, 0.13), transparent 80%),
+        radial-gradient(ellipse 58% 64% at 82% 78%, rgba(198, 214, 184, 0.10), transparent 80%),
+        linear-gradient(118deg, rgba(255, 255, 255, 0.70) 0%, rgba(250, 251, 246, 0.66) 30%, rgba(255, 253, 248, 0.62) 55%, rgba(249, 251, 245, 0.70) 100%),
+        url('images/banner.jpeg');
     background-attachment: fixed;
-    background-position: center;
+    background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -64,12 +69,13 @@ body.landing {
 body.landing #page-wrapper,
 body.is-mobile.landing #page-wrapper {
     background: transparent;
+    background-attachment: fixed;
 }
 
 #one.wrapper.style1 {
     background-color: transparent;
     background-image: none;
-    color: #4b2f27;
+    color: #2e3f2c;
     box-shadow: none;
 }
 
@@ -80,24 +86,24 @@ body.is-mobile.landing #page-wrapper {
 #one.wrapper.style1 h6,
 #one.wrapper.style1 .wedding-date,
 #one.wrapper.style1 .calendar-icon-link {
-    color: #4b2f27;
+    color: #2e3f2c;
 }
 
 #one.wrapper.style1 p,
 #one.wrapper.style1 header p,
 #one.wrapper.style1 #countdown {
-    color: rgba(75, 47, 39, 0.80);
+    color: rgba(46, 63, 44, 0.80);
 }
 
 #one.wrapper.style1 .calendar-card {
-    border: 1px solid rgba(75, 47, 39, 0.07);
-    box-shadow: 0 8px 18px rgba(75, 47, 39, 0.10);
+    border: 1px solid rgba(46, 63, 44, 0.07);
+    box-shadow: 0 8px 18px rgba(46, 63, 44, 0.10);
 }
 
 #two.wrapper.alt.style2 {
     background-color: transparent;
     background-image: none;
-    color: #3d2d22;
+    color: #2d3f2b;
 }
 
 #two.wrapper.alt.style2 .spotlight {
@@ -109,7 +115,7 @@ body.is-mobile.landing #page-wrapper {
 #two.wrapper.alt.style2 h4,
 #two.wrapper.alt.style2 p,
 #two.wrapper.alt.style2 a {
-    color: #3d2d22;
+    color: #2d3f2b;
 }
 
 #two.wrapper.alt.style2 .content a.btn-route,
@@ -119,17 +125,17 @@ body.is-mobile.landing #page-wrapper {
     gap: 0.5rem;
     padding: 0.8rem 1.2rem;
     margin-top: 1rem;
-    background: rgba(146, 90, 55, 0.14);
-    border: 1px solid rgba(61, 45, 34, 0.12);
+    background: rgba(130, 157, 106, 0.15);
+    border: 1px solid rgba(45, 63, 43, 0.12);
     border-radius: 999px;
-    color: #3d2d22;
+    color: #2d3f2b;
     text-decoration: none;
     border-bottom: none;
 }
 
 #two.wrapper.alt.style2 .content a.btn-route:hover,
 #two.wrapper.alt.style2 .btn-route:hover {
-    background: rgba(146, 90, 55, 0.22);
+    background: rgba(130, 157, 106, 0.22);
 }
 
 /* Date & Calendar Invite Header */
@@ -175,7 +181,7 @@ body.is-mobile.landing #page-wrapper {
 }
 
 .calendar-icon-link:hover {
-    color: #29b6f6; /* Subtle accent highlight on hover */
+    color: #67875f; /* Warm green accent highlight on hover */
     transform: scale(1.15);
 }
 
@@ -187,28 +193,28 @@ body.is-mobile.landing #page-wrapper {
 #three.wrapper.style3.special {
     background-color: transparent;
     background-image: none;
-    color: #3d2d22;
+    color: #2d3f2b;
 }
 
 #three.wrapper.style3.special h2,
 #three.wrapper.style3.special > .inner > .major p {
-    color: #3d2d22;
+    color: #2d3f2b;
 }
 
 #three.wrapper.style3.special .features li {
-    background-color: #eee0cb;
-    color: #3d2d22;
-    box-shadow: inset 0 0 0 1px rgba(76, 44, 34, 0.10), 0 10px 24px rgba(65, 39, 32, 0.12);
+    background-color: #f3efe6;
+    color: #2d3f2b;
+    box-shadow: inset 0 0 0 1px rgba(54, 75, 52, 0.10), 0 10px 24px rgba(48, 64, 48, 0.12);
 }
 
 #three.wrapper.style3.special .features li h3,
 #three.wrapper.style3.special .features li h4,
 #three.wrapper.style3.special .features li p {
-    color: #3d2d22;
+    color: #2d3f2b;
 }
 
 #three.wrapper.style3.special .features li::before {
-    color: #9c5d3f;
+    color: #758c5f;
 }
 
 @media screen and (max-width: 736px) {
@@ -219,10 +225,10 @@ body.is-mobile.landing #page-wrapper {
 }
 
 #cta.wrapper.style4 {
-    background-color: rgba(91, 49, 43, 0.22);
+    background-color: rgba(118, 138, 97, 0.18);
     background-image:
-        radial-gradient(ellipse 40% 60% at 72% 50%, rgba(215, 137, 70, 0.20), transparent 74%),
-        linear-gradient(120deg, rgba(75, 43, 42, 0.18), rgba(151, 84, 54, 0.20));
+        radial-gradient(ellipse 40% 60% at 72% 50%, rgba(179, 204, 158, 0.20), transparent 74%),
+        linear-gradient(120deg, rgba(92, 113, 84, 0.18), rgba(161, 184, 136, 0.20));
 }
 
 .timeline-spotlight .venue-image {
@@ -260,6 +266,55 @@ body.is-mobile.landing #page-wrapper {
     left: 0;
     top: 0.65rem;
     color: #ffffff;
+}
+
+.timeline-entry:nth-child(1) .icon.major {
+    color: #a8b98e !important;
+}
+
+.timeline-entry:nth-child(1) h3 {
+    color: #40533f !important;
+}
+
+.timeline-entry:nth-child(2) .icon.major {
+    color: #8ea27e !important;
+}
+
+.timeline-entry:nth-child(2) h3 {
+    color: #40533f !important;
+}
+
+.timeline-entry:nth-child(3) .icon.major {
+    color: #647d5b !important;
+}
+
+.timeline-entry:nth-child(3) h3 {
+    color: #40533f !important;
+}
+
+.timeline-entry:nth-child(4) .icon.major {
+    color: #40533f !important;
+}
+
+.timeline-entry:nth-child(4) h3 {
+    color: #40533f !important;
+}
+
+.timeline-entry:nth-child(5) .icon.major {
+    color: #2d3f2b !important;
+}
+
+.timeline-entry:nth-child(5) h3 {
+    color: #40533f !important;
+}
+
+.timeline-entry:nth-child(4) h3,
+.timeline-entry:nth-child(5) h3 {
+    color: #40533f !important;
+}
+
+.timeline-spotlight .content > h2 {
+    color: #40533f;
 }
 
 .timeline-entry h3 {
@@ -365,10 +420,10 @@ body.is-mobile.landing #page-wrapper {
     order: 1;
     overflow: hidden;
     background:
-        linear-gradient(135deg, rgba(123, 73, 55, 0.12), rgba(234, 191, 124, 0.10)),
-        #f8f1e9;
+        linear-gradient(135deg, rgba(84, 115, 88, 0.12), rgba(205, 219, 189, 0.10)),
+        #f2f5ee;
     border-radius: 0;
-    box-shadow: 0 12px 24px rgba(59, 42, 32, 0.10);
+    box-shadow: 0 12px 24px rgba(36, 53, 41, 0.10);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -454,35 +509,35 @@ body.is-mobile.landing #page-wrapper {
 .color-days .flip-card,
 .color-days .panel,
 .color-days .calendar-top {
-    background: #c79b73;
+    background: #b7c7a1;
 }
 
 .color-hours,
 .color-hours .flip-card,
 .color-hours .panel,
 .color-hours .calendar-top {
-    background: #a87855;
+    background: #8ea27e;
 }
 
 .color-minutes,
 .color-minutes .flip-card,
 .color-minutes .panel,
 .color-minutes .calendar-top {
-    background: #86583f;
+    background: #647d5b;
 }
 
 .color-seconds,
 .color-seconds .flip-card,
 .color-seconds .panel,
 .color-seconds .calendar-top {
-    background: #603d32;
+    background: #40533f;
 }
 
 .color-days .val,
 .color-hours .val,
 .color-minutes .val,
 .color-seconds .val {
-    color: #fff8ef;
+    color: #f7f3ee;
 }
 
 /* Flip Card Body */
