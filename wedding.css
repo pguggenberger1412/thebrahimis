@@ -27,6 +27,12 @@
     transition-delay: 2.8s;
 }
 
+body.is-mobile.landing #banner {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('images/banner.jpeg');
+}
+
 #page-wrapper {
     background-color: rgba(255, 255, 255, 0.82);
     background-image:
