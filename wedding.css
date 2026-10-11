@@ -1,3 +1,7 @@
+ :root {
+    --surface-green: #edf4e8;
+}
+
 @font-face {
     font-family: 'Alex Brush';
     src: url('assets/webfonts/alex-brush.ttf') format('truetype');
@@ -29,7 +33,7 @@
 
 body.is-mobile.landing #banner {
     background-image:
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
         url('images/banner.jpeg');
 }
 
@@ -208,7 +212,7 @@ body.is-mobile.landing #page-wrapper {
 }
 
 #three.wrapper.style3.special .features li {
-    background-color: #f3efe6;
+    background-color: var(--surface-green);
     color: #2d3f2b;
     box-shadow: inset 0 0 0 1px rgba(54, 75, 52, 0.10), 0 10px 24px rgba(48, 64, 48, 0.12);
 }
@@ -225,7 +229,7 @@ body.is-mobile.landing #page-wrapper {
 
 @media screen and (max-width: 736px) {
     #three.wrapper.style3.special .features li {
-        background-color: rgba(238, 224, 203, 0.65) !important;
+        background-color: rgba(237, 244, 232, 0.88) !important;
         padding: 3em 1.5em 1.5em;
     }
 }
@@ -372,7 +376,7 @@ body.is-mobile.landing #page-wrapper {
     }
 
     #two.wrapper.alt.style2 .spotlight .content {
-        background-color: rgba(238, 224, 203, 0.65);
+        background-color: rgba(237, 244, 232, 0.88);
     }
 
     .timeline-entry {
@@ -408,7 +412,7 @@ body.is-mobile.landing #page-wrapper {
 
     #banner:after {
         display: block;
-        transition: opacity 0.8s ease-in-out;
+        transition: opacity 1.6s ease-in-out;
         transition-delay: 0s;
     }
 
@@ -427,7 +431,7 @@ body.is-mobile.landing #page-wrapper {
     overflow: hidden;
     background:
         linear-gradient(135deg, rgba(84, 115, 88, 0.12), rgba(205, 219, 189, 0.10)),
-        #f2f5ee;
+        var(--surface-green);
     border-radius: 0;
     box-shadow: 0 12px 24px rgba(36, 53, 41, 0.10);
     display: flex;
@@ -469,7 +473,7 @@ body.is-mobile.landing #page-wrapper {
 .calendar-card {
     position: relative;
     width: 140px;
-    background: #ffffff;
+    background: var(--surface-green);
     border-radius: 8px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
     display: flex;
